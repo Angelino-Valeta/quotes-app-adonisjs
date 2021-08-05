@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Adonis fullstack application
 
 This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
@@ -29,3 +30,7 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+=======
+# quotes-app-adonisjs
+Aplicativo de citações , no qual um usuário pode se inscrever e fazer o login para criar uma citação . Este aplicativo de demonstração dará a você a oportunidade de realizar as operações CRUD (Criar, Ler, Atualizar e Excluir).
+>>>>>>> 9850799 (Initial commit)
