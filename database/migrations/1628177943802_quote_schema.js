@@ -8,7 +8,7 @@ class QuoteSchema extends Schema {
     this.create('quotes', (table) => {
       table.increments()
       table.integer('user_id').notNullable()
-      table.string('username, 80').notNullable()
+      table.string('username', 80).notNullable()
       table.string('body').notNullable()
       table.timestamps()
     })
