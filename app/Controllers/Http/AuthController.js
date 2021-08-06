@@ -5,7 +5,7 @@ class AuthController {
   loginView({ view }){
     return view.render('auth.login')
   }
-  registerView({ view }){
+  registrationView({ view }){
     return view.render('auth.register')
   }
 
@@ -16,7 +16,7 @@ class AuthController {
 
   async postRegister({request, session, response}){
     const user = await User.create({
-      username: request.input('username'),
+      username: request.input('name'),
       email: request.input('email'),
       password: request.input('password')
     })
