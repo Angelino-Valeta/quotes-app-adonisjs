@@ -53,7 +53,7 @@ class QuoteController {
       username: auth.user.username,
       body: request.input('body')
     })
-    session.flash({ 'sucessmessage': 'Quote has been created' })
+    session.flash({ 'successmessage': 'Quote has been created'})
     return response.redirect('/')
   }
 
@@ -115,7 +115,7 @@ class QuoteController {
    */
   async destroy ({ params, request, response, session }) {
     const quote = await Quote.find(params.id)
-    quote.destroy()
+    await quote.delete()
     session.flash({'successmessage': 'Quote has been deleted'})
     return response.redirect('/')
   }
