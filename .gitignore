@@ -21,3 +21,5 @@ database/*.sqlite
 # information for Eclipse / Flash Builder.
 /node_modules/
 >>>>>>> Stashed changes
+*.lock
+*.log
