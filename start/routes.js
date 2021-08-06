@@ -31,7 +31,7 @@ Route.get('/login', 'AuthController.loginView').as('login.create')
 Route.post('/login-store', 'AuthController.postLogin').as('login.store')
 
 // Quotes
-Route.get('/view-quote/:id', 'QuoteController.show').as('view.quote')
+Route.get('/view-quote/:id','QuoteController.show').as('view.quote')
 
 Route.group(() => {
   Route.get('create-quote', 'QuoteController.create').as('create.quote')
