@@ -8,9 +8,16 @@ tmp
 # Environment variables, never commit this file
 .env
 
+<<<<<<< Updated upstream
 # The development sqlite file
 database/*.sqlite
 
 # VSCode & Webstorm history directories
 .history
 .idea
+=======
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+/node_modules/
+>>>>>>> Stashed changes
